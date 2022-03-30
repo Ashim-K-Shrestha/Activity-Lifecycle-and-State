@@ -1,17 +1,45 @@
-# Lab 5: Activities Lifecycle and State
+# Lab 5: Coding Challenge
 
-**This branch consists of the task section for the lab work 5. The codes for every tasks along with their screenshots are attached
+**This branch consists of the Coding Challenge section for the lab work 5. The codes for every tasks along with their screenshots are attached
 within this branch.**
 
-**In this task, the previous lab task was used and the main thing that was done here was the use of Activity lifecycle functions.
-Altogether, 6 different lifecycle functions were used and they are; onStart(), onStop(), onResume(), onPause(), onRestart() and
-onDestroy().**
+**The task was to create two different activities that used intents to start and transfer data between them. The final app has
+the feature where we can select items from a list given in the second activity and the selected items are displayed in the first
+activity. The second activity consists of buttons that can be used to add the items into the shopping list.**
 
-## Lifecycle Callbacks Being Executed
+---
 
-**The task was to implement the lifecycle callback functions to the two activities task of lab 4. The instructions provided in the
-lab work were followed and the task was completed. The 6 lifecycle functions were used in the task and the state of the app was
-examined by performing several actions like opening the app, restarting it, rotating the screen and sometimes terminating it.
-The respective callback messages were displayed in the logcat pane that is shown by the screenshot below.**
+## Final App UI
 
-![Lifecycle Function](SS/TaskSS.png)
+### Main Activity UI
+
+**The final app consists of two activities; mainActivity and secondActivity. The UI of the mainActivity has 10 textViews that
+are visible from the start and when the products are added from the second activity, then they are displayed in the text views.
+The count of a product increases when it is added multiple times.**
+
+![Main UI](SS/MainUI.png)
+
+### Second Activity UI
+
+**Likewise, the UI of the secondActivity has a list of 10 different items that are represented by buttons. The buttons allow the
+users to add the product in the shopping list.**
+
+![Second UI](SS/SecondUI.png)
+
+---
+
+## Adding Products in the Shopping List
+
+![Sending Message](SS/MainMessage.png)
+
+**The screenshot above shows the items being added into the shopping list by clicking the buttons in the second activity.**
+
+---
+
+## Products Added in the Shopping List
+
+![Message Received](SS/MessageReceived.png)
+
+**The screenshot above shows the products added into the shopping list.**
+
+---

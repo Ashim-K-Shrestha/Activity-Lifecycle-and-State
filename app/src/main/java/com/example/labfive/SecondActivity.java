@@ -28,10 +28,15 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     public void addItem (View view) {
+        // creating a new intent for the second activity
         Intent replyIntent=new Intent();
+        // storing the text from the button view into the string variable
         String message=((Button)view).getText().toString();
+        // adding the string from the intent as an extra intent where EXTRA_REPLY is the key and reply is the value
         replyIntent.putExtra(EXTRA_MESSAGE, message);
+        // setting the results to RESULT_OK for the successful response
         setResult(RESULT_OK,replyIntent);
+        // closing the activity
         finish();
     }
 }
