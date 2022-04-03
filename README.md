@@ -14,8 +14,8 @@ activity. The second activity consists of buttons that can be used to add the it
 ### Main Activity UI
 
 **The final app consists of two activities; mainActivity and secondActivity. The UI of the mainActivity has 10 textViews that
-are visible from the start and when the products are added from the second activity, then they are displayed in the text views.
-The count of a product increases when it is added multiple times.**
+are visible from the start but with no text and when the products are added from the second activity, then they are displayed in
+the text views. The count of a product increases when it is added multiple times.**
 
 ![Main UI](SS/MainUI.png)
 
@@ -30,16 +30,18 @@ users to add the product in the shopping list.**
 
 ## Adding Products in the Shopping List
 
-![Sending Message](SS/MainMessage.png)
+![Sending Message](SS/ProductsAdded.png)
 
 **The screenshot above shows the items being added into the shopping list by clicking the buttons in the second activity.**
 
 ---
 
-## Products Added in the Shopping List
 
-![Message Received](SS/MessageReceived.png)
+## Products List state saved on rotation
 
-**The screenshot above shows the products added into the shopping list.**
+![Message Received](SS/Landscape.png)
+
+**The screenshot above shows the products list being saved although the device's orientation is changed from vertical to 
+horizontal showing the instance of the activity being saved.**
 
 ---
