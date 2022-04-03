@@ -22,4 +22,5 @@
     <string name="breadList">Bread</string>
     <string name="berriesList">Berries</string>
     <string name="add_item">Add Item</string>
+    <string name="text_hint">Enter Text Here</string>
 </resources>
