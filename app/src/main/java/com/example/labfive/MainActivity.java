@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         // setting the XML file as your main layout when the app starts
         setContentView(R.layout.activity_main);
 
-        // logging the start of the onCreate method
+        // logging the events of the onCreate method
         Log.d(LOG_TAG, "-------");
         Log.d(LOG_TAG, "onCreate");
 
@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState != null) {
             boolean isVisible = savedInstanceState.getBoolean("reply_visible");
 
+            // if isVisible is not null
             if (isVisible) {
                 mReplyHeadTextView.setVisibility(View.VISIBLE);
                 // fetching the text from the bundle and setting it to the textView
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // lifecycle methods
+    // lifecycle callback methods
     @Override
     protected void onStart() {
         super.onStart();
@@ -101,9 +102,9 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Method to save the data of the activity when the state of the activity is changed
-     * <p>
+     *
      * This method is mostly called during onStop() or the onPause() because the activity is most likely to be
-     * destroyed or recreated
+     * destroyed or recreated during these phases
      */
     @Override
     public void onSaveInstanceState(Bundle outState) {
@@ -121,8 +122,9 @@ public class MainActivity extends AppCompatActivity {
      * along with the data.
      *
      * @param view The view (Button) that was clicked.
-     *             The TwoActivities app contains two activities and sends messages
-     *             (intents) between them.
+     *
+     * The TwoActivities app contains two activities and sends messages
+     * (intents) between them.
      */
     public void launchSecondActivity(View view) {
         // Displaying the message in the logcat panel

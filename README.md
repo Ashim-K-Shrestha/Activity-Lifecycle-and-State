@@ -11,7 +11,7 @@ onDestroy().**
 
 **The task was to implement the lifecycle callback functions to the two activities task of lab 4. The instructions provided in the
 lab work were followed and the task was completed. The 6 lifecycle functions were used in the task and the state of the app was
-examined by performing several actions like opening the app, restarting it, rotating the screen and sometimes terminating it.
-The respective callback messages were displayed in the logcat pane that is shown by the screenshot below.**
+examined by performing several actions like opening the app, sending messages and replies, restarting it, rotating the screen and
+sometimes terminating it. The respective callback messages were displayed in the logcat pane that is shown by the screenshot below.**
 
 ![Lifecycle Function](SS/TaskSS.png)
