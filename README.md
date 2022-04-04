@@ -30,7 +30,7 @@ users to add the product in the shopping list.**
 
 ## Adding Products in the Shopping List
 
-![Sending Message](SS/ProductsAdded.png)
+![Products Added](SS/ProductsAdded.png)
 
 **The screenshot above shows the items being added into the shopping list by clicking the buttons in the second activity.**
 
@@ -39,7 +39,7 @@ users to add the product in the shopping list.**
 
 ## Products List state saved on rotation
 
-![Message Received](SS/Landscape.png)
+![Landscape View](SS/Landscape.png)
 
 **The screenshot above shows the products list being saved although the device's orientation is changed from vertical to 
 horizontal showing the instance of the activity being saved.**

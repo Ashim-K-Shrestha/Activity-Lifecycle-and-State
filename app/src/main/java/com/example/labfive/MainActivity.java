@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     // initializing an object of class ShopList for storing the products
     private ShopList items = new ShopList();
 
-    //
     public MainActivity() {
     }
 
@@ -84,10 +83,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    // function to display the list of products in the main activity
     public void drawView() {
+        // fetching the items from the list
         HashMap<String, Integer> l = items.getItems();
+        // assigning and referencing to the text view
         TextView tv = findViewById(R.id.textView);
+        // setting the text to the text view
         tv.setText("");
+        // returning the items to the text view
         for (String k : l.keySet()) {
             String s = l.get(k).toString() + " " + k + "\n";
             tv.setText(tv.getText() + s);
