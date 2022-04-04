@@ -63,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param outState  the state going out (being saved, not read)
      *
+     * @NonNull means the method should not return null
+     *
      */
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
@@ -72,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         EditText text=findViewById(R.id.editTextMessage);
         // fetching the text from the text view
         CharSequence data=text.getText();
-        // putting the data into outState
+        // putCharSequence() inserts a charSequence value into the bundle replacing the value of the given key
         outState.putCharSequence("data",data);
         outState.putInt("count",Count);
     }
